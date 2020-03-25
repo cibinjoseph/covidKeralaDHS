@@ -19,11 +19,17 @@ else:
 ```
 
 ## Documentation
+### Available functions
 For a list of available functions, import the module and use help():
 ```
 import covidKeralaDHS as co
 help(co)
-```
+```  
+### Working
+The code parses the DHS website and extracts the links of the pdf bulletins.
+A local JSON file is maintained which contains the date and corresponding bulletin links.
+This local JSON file is compared against the server data when checking for updates.
+
 
 ## Contributing
 All contributions through pull requests only.
