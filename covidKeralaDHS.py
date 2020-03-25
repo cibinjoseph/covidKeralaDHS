@@ -53,7 +53,7 @@ def __getDateLinkDict(verbose=True):
     and their corresponding links to bulletin pages.
     """
     # Ensure python version 3+
-    if sys.version < (3, 0):
+    if sys.version_info.major < 3:
         print('ERROR: Use python version 3+')
         raise SyntaxError
 
