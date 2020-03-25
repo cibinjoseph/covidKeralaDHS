@@ -86,9 +86,9 @@ def downloadPDF(PDFlink):
     """
     try:
         req = urllib3.PoolManager()
-        response = req.request('GET',PDFlink)
+        response = req.request('GET', PDFlink)
         bulletinFile = open(bulletinDefaultFile, 'wb')
-        bulletinFile.write(response.read())
+        bulletinFile.write(response.data)
     except HTTPError:
         print('Error: PDF file not found')
         return False
