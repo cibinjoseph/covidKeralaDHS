@@ -5,6 +5,7 @@ A module to parse the COVID bulletins provided by DHS Kerala
 import urllib3
 from bs4 import BeautifulSoup
 import json
+import sys
 
 linkPre = 'http://dhs.kerala.gov.in'
 jsonDefaultFile = 'bulletinLinks.json'
@@ -51,6 +52,11 @@ def __getDateLinkDict(verbose=True):
     Returns a dict data type containing all dates
     and their corresponding links to bulletin pages.
     """
+    # Ensure python version 3+
+    if sys.version < (3, 0):
+        print('ERROR: Use python version 3+')
+        raise SyntaxError
+
     # Parse DHS Kerala webpage to get html tags
     if verbose:
         print('Parsing Kerala DHS webpage ...')
