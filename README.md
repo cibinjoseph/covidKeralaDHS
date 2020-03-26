@@ -1,6 +1,6 @@
 # covidKeralaDHS
-Python module to parse Kerala DHS website for daily bulletins on COVID cases
-For a python module on all states visit [covidIndiaStateBulletins](https://github.com/cibinjoseph/covidIndiaStateBulletins).
+Python module to parse Kerala DHS website for daily bulletins on COVID cases.  
+For a python module on **all states** visit [covidIndiaStateBulletins](https://github.com/cibinjoseph/covidIndiaStateBulletins).
 
 ## Usage
 **Example 1**: Download pdf bulletin for a specific date  
