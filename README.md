@@ -4,13 +4,13 @@ For a python module on **all states** visit [covidIndiaStateBulletins](https://g
 
 ## Usage
 **Example 1**: Download pdf bulletin for a specific date  
-```
+```python
 import covidKeralaDHS as co
 co.getBulletin('23.03.2020')
 ```  
 
 **Example 2**. Check for updated bulletins for a specific date
-```
+```python
 import covidKeralaDHS as co
 isNew = co.isNewBulletin('24.03.2020')
 if isNew:
@@ -22,7 +22,7 @@ else:
 ## Documentation
 ### Available functions
 For a list of available functions, import the module and use help():
-```
+```python
 import covidKeralaDHS as co
 help(co)
 ```  
